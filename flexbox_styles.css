@@ -82,9 +82,8 @@ Challenge: Use flexbox in media queries to create a responsive layout
 
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     header, nav, .card-container, .features, .footer-content {
         flex-direction: column;
     }
 }
-
