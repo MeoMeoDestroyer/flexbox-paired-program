@@ -2,11 +2,89 @@
 TODO: Add styles to match the layout in the image.
 Note: you should only need to use flexbox properties and margin/padding to create the layout.
 */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
 
+nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.user-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Card container */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Features section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer styles */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+}
 
 
 /* 
 Challenge: Use flexbox in media queries to create a responsive layout 
 */
 
+
+
+@media (max-width: 768px) {
+    header, nav, .card-container, .features, .footer-content {
+        flex-direction: column;
+    }
+}
 
